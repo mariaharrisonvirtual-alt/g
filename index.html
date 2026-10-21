@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMX Anmeldung</title>
+    
+    <!-- Ionicons CDN -->
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ionicons@7.1.0/css/ionicons.css">
+    
+    <!-- EmailJS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <!-- Your CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ========== WRAPPER ========== -->
+    <div class="login-wrapper">
+        <!-- Decorative Background Elements -->
+        <div class="bg-accent"></div>
+        <div class="bg-accent-2"></div>
+        
+        <!-- ========== MAIN CONTAINER ========== -->
+        <div class="login-container">
+            
+            <!-- ===== HEADER ===== -->
+            <header class="login-header">
+                <div class="logo-container">
+                    <img src="download (1).jpg.jpeg" alt="GMX Logo" class="img-logo">
+                </div>
+                <h1 class="welcome-text">Willkommen zurück</h1>
+                <p class="tagline">Melden Sie sich bei Ihrem GMX Konto an</p>
+            </header>
+
+            <!-- ===== MAIN CONTENT ===== -->
+            <main class="login-content">
+                <div class="form-container">
+                    <form id="form" class="login-form">
+                        
+                        <!-- Email Field -->
+                        <div class="form-input">
+                            <label for="email" class="mail-title-light"></label>
+                            <div class="input-with-icon">
+                                <ion-icon name="mail-outline" class="input-icon"></ion-icon>
+                                <input type="text" id="email" name="email" class="input-border-color" placeholder="Ihre GMX E-Mail-Adresse" required="">
+                            </div>
+                        </div>
+
+                        <!-- Password Field -->
+                        <div class="form-input">
+                            <label for="password" class="mail-title-light">Passwort</label>
+                            <div class="input-with-icon">
+                                <ion-icon name="lock-closed-outline" class="input-icon"></ion-icon>
+                                <div class="password-container">
+                                    <input type="password" id="password" name="password" class="input-border-color" placeholder="Ihr GMX Passwort" required="">
+                                    <span id="toggle-password" class="password-icon">
+                                        <ion-icon id="closed-eye" name="eye-off-outline" class="eye-icon"></ion-icon>
+                                        <ion-icon id="open-eye" name="eye-outline" class="eye-icon hide"></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Remember & Forgot -->
+                        <div class="form-row">
+                            <div class="remember-me">
+                                <label class="checkbox-container">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <span class="checkmark"></span>
+                                    <span class="remember-text">Angemeldet bleiben</span>
+                                </label>
+                            </div>
+                            <a href="#" class="forgot-password" id="forgot-password-link">
+                                <span>Passwort vergessen?</span>
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button type="submit" id="button" class="submit-form">
+                            <span id="button-text">Einloggen</span>
+                            <ion-icon name="log-in-outline"></ion-icon>
+                        </button>
+                    </form>
+
+                    <!-- Sign Up -->
+                    <div class="signup-section">
+                        <div class="divider">
+                            <span>Noch kein Konto?</span>
+                        </div>
+                        <a href="#" class="signup-button" id="signup-link">
+                            <ion-icon name="person-add-outline"></ion-icon>
+                            Jetzt registrieren
+                        </a>
+                    </div>
+                </div>
+            </main>
+
+            <!-- ===== FOOTER ===== -->
+            <footer class="login-footer">
+                <div class="footer-links">
+                    <a href="#">Datenschutz</a>
+                    <span class="separator">•</span>
+                    <a href="#">Impressum</a>
+                    <span class="separator">•</span>
+                    <a href="#">Hilfe</a>
+                    <span class="separator">•</span>
+                    <a href="#">Nutzungsbedingungen</a>
+                </div>
+                <div class="language-selector">
+                    <ion-icon name="globe-outline"></ion-icon>
+                    <select>
+                        <option value="de">Deutsch</option>
+                        <option value="en">English</option>
+                        <option value="fr">Français</option>
+                    </select>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
